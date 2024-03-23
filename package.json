@@ -1,0 +1,44 @@
+{
+  "description": "Marinade typescript-based SDK for CLI",
+  "license": "ISC",
+  "author": "PearlineDavis",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^18.15.10",
+    "@types/bn.js": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "@typescript-eslint/typescript-estree": "^5.59.1",
+    "bigint-buffer": "^1.1.5",
+    "gts": "^5.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.0.5",
+    "lint-staged": "^13.2.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "5.0.4"
+  },
+  "resolutions": {
+    "@typescript-eslint/typescript-estree": "^5.59.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "gts lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "version": "1.0.0",
+  "name": "quianam",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleneMcCullough/quianam.git"
+  }
+}
